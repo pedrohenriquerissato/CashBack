@@ -67,9 +67,6 @@ C:\Users\pedrorissato\entrevista\CashBack.Api\bin\Debug\netcoreapp3.1\CashBack.D
 C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.csprojAssemblyReference.cache
 C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.AssemblyInfoInputs.cache
 C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.AssemblyInfo.cs
-C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.csproj.CoreCompileInputs.cache
-C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.RazorTargetAssemblyInfo.cache
 C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.csproj.CopyComplete
 C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\staticwebassets\CashBack.Api.StaticWebAssets.Manifest.cache
@@ -77,3 +74,10 @@ C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\staticweba
 C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.dll
 C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.pdb
 C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.genruntimeconfig.cache
+C:\Users\pedrorissato\entrevista\CashBack.Api\bin\Debug\netcoreapp3.1\DataAnnotationsExtensions.dll
+C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.csproj.CoreCompileInputs.cache
+C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\pedrorissato\entrevista\CashBack.Api\obj\Debug\netcoreapp3.1\CashBack.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pedrorissato\entrevista\CashBack.Api\bin\Debug\netcoreapp3.1\CashBack.Api.xml
+C:\Users\pedrorissato\entrevista\CashBack.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.dll
+C:\Users\pedrorissato\entrevista\CashBack.Api\bin\Debug\netcoreapp3.1\RestSharp.dll

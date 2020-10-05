@@ -6,7 +6,7 @@ C:\Users\pedrorissato\entrevista\CashBack.Service\bin\Debug\netcoreapp3.1\CashBa
 C:\Users\pedrorissato\entrevista\CashBack.Service\obj\Debug\netcoreapp3.1\CashBack.Service.csprojAssemblyReference.cache
 C:\Users\pedrorissato\entrevista\CashBack.Service\obj\Debug\netcoreapp3.1\CashBack.Service.AssemblyInfoInputs.cache
 C:\Users\pedrorissato\entrevista\CashBack.Service\obj\Debug\netcoreapp3.1\CashBack.Service.AssemblyInfo.cs
-C:\Users\pedrorissato\entrevista\CashBack.Service\obj\Debug\netcoreapp3.1\CashBack.Service.csproj.CoreCompileInputs.cache
 C:\Users\pedrorissato\entrevista\CashBack.Service\obj\Debug\netcoreapp3.1\CashBack.Service.csproj.CopyComplete
 C:\Users\pedrorissato\entrevista\CashBack.Service\obj\Debug\netcoreapp3.1\CashBack.Service.dll
 C:\Users\pedrorissato\entrevista\CashBack.Service\obj\Debug\netcoreapp3.1\CashBack.Service.pdb
+C:\Users\pedrorissato\entrevista\CashBack.Service\obj\Debug\netcoreapp3.1\CashBack.Service.csproj.CoreCompileInputs.cache

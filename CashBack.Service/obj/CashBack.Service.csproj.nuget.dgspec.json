@@ -109,6 +109,14 @@
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[3.1.8, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.7, )"
             }
           },
           "imports": [
