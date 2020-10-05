@@ -1,0 +1,9 @@
+C:\Users\pedrorissato\entrevista\CashBack.Domain\bin\Debug\netcoreapp3.1\CashBack.Domain.deps.json
+C:\Users\pedrorissato\entrevista\CashBack.Domain\bin\Debug\netcoreapp3.1\CashBack.Domain.dll
+C:\Users\pedrorissato\entrevista\CashBack.Domain\bin\Debug\netcoreapp3.1\CashBack.Domain.pdb
+C:\Users\pedrorissato\entrevista\CashBack.Domain\obj\Debug\netcoreapp3.1\CashBack.Domain.csprojAssemblyReference.cache
+C:\Users\pedrorissato\entrevista\CashBack.Domain\obj\Debug\netcoreapp3.1\CashBack.Domain.AssemblyInfoInputs.cache
+C:\Users\pedrorissato\entrevista\CashBack.Domain\obj\Debug\netcoreapp3.1\CashBack.Domain.AssemblyInfo.cs
+C:\Users\pedrorissato\entrevista\CashBack.Domain\obj\Debug\netcoreapp3.1\CashBack.Domain.csproj.CoreCompileInputs.cache
+C:\Users\pedrorissato\entrevista\CashBack.Domain\obj\Debug\netcoreapp3.1\CashBack.Domain.dll
+C:\Users\pedrorissato\entrevista\CashBack.Domain\obj\Debug\netcoreapp3.1\CashBack.Domain.pdb
