@@ -26,13 +26,18 @@ namespace CashBack.Api.Controllers
             this._retailerService = retailerService;
         }
 
+        /// <summary>
+        /// Retorna um(a) revendedor(a) pelo CPF
+        /// </summary>
+        /// <param name="cpf"></param>
+        /// <returns></returns>
         [Authorize("Bearer")]
-        [HttpGet("{id}")]
-        public async Task<ActionResult<RetailerResource>> GetRetailerByDocumentId(string id)
+        [HttpGet("{cpf}", Name = "GetRetailerByDocumentId")]
+        public async Task<ActionResult<RetailerResource>> GetRetailerByDocumentId(string cpf)
         {
             try
             {
-                var retailer = await _retailerService.GetRetailerByDocumentId(id);
+                var retailer = await _retailerService.GetRetailerByDocumentId(cpf);
                 var retailerService = _mapper.Map<Retailer, RetailerResource>(retailer);
 
                 return Ok(retailerService);
@@ -43,6 +48,11 @@ namespace CashBack.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Cadastra um(a) novo(a) revendedor(a)
+        /// </summary>
+        /// <param name="retailer">Objeto do(a) revendedor(a)</param>
+        /// <returns></returns>
         [HttpPost("")]
         public async Task<ActionResult<RetailerResource>> CreateRetailer([FromBody] SaveRetailerResource retailer)
         {
@@ -57,11 +67,9 @@ namespace CashBack.Api.Controllers
 
                 var newRetailer = await _retailerService.CreateRetailer(retailerToCreate);
 
-                var createdRetailer = await _retailerService.GetRetailerByDocumentId(newRetailer.DocumentId);
+                var retailerService = _mapper.Map<Retailer, RetailerResource>(newRetailer);
 
-                var retailerResource = _mapper.Map<Retailer, RetailerResource>(createdRetailer);
-
-                return Ok(retailerResource);
+                return CreatedAtAction(nameof(GetRetailerByDocumentId), new { cpf = newRetailer.DocumentId }, retailerService);
             }
             catch (ArgumentException ex)
             {

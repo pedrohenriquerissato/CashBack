@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using AutoMapper;
 using CashBack.Api.Resources;
-using CashBack.Domain.Models;
 using CashBack.Service.Interfaces;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CashBack.Api.Controllers
@@ -26,6 +22,11 @@ namespace CashBack.Api.Controllers
             this._loginService = loginService;
         }
 
+        /// <summary>
+        /// Realiza o login de um(a) revendedor(a) na API
+        /// </summary>
+        /// <param name="login">Objeto de login</param>
+        /// <returns></returns>
         [AllowAnonymous]
         [HttpPost("")]
         public async Task<ActionResult<RetailerResource>> Login([FromBody] LoginResource login)

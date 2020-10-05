@@ -19,15 +19,15 @@ namespace CashBack.Data.Repositories
 
         public async Task<object> Login(string email, string password)
         {
-            if (string.IsNullOrWhiteSpace(email)) throw new Exception("Email não pode ser vazio");
+            if (string.IsNullOrWhiteSpace(email)) return null;
 
-            if (string.IsNullOrWhiteSpace(password)) throw new Exception("Senha não pode ser vazia");
+            if (string.IsNullOrWhiteSpace(password)) return null;
 
 
             var retailer = await Context.Retailers.FirstOrDefaultAsync(r =>
                 r.Email.ToLower().Equals(email.ToLower()));
 
-            if (retailer == null) return "Email e/ou senha inválido";
+            if (retailer == null) return null;
 
             if (!BCrypt.Net.BCrypt.Verify(password, retailer.Password, true, HashType.SHA512))
             {

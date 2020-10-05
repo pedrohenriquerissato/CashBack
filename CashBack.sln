@@ -1,15 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashBack.Api", "CashBack.Api\CashBack.Api.csproj", "{821D07DD-EA4E-47F1-97C3-EA563D1C9E50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashBack.Api", "CashBack.Api\CashBack.Api.csproj", "{821D07DD-EA4E-47F1-97C3-EA563D1C9E50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashBack.Data", "CashBack.Data\CashBack.Data.csproj", "{939957FD-E619-42EF-AA6A-50BEAA794B54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashBack.Data", "CashBack.Data\CashBack.Data.csproj", "{939957FD-E619-42EF-AA6A-50BEAA794B54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashBack.Domain", "CashBack.Domain\CashBack.Domain.csproj", "{BB80DA9F-D400-45B1-AE01-F4258E2ED051}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashBack.Domain", "CashBack.Domain\CashBack.Domain.csproj", "{BB80DA9F-D400-45B1-AE01-F4258E2ED051}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashBack.Service", "CashBack.Service\CashBack.Service.csproj", "{57906C2E-D023-4F3F-902C-C7B0101C77BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashBack.Service", "CashBack.Service\CashBack.Service.csproj", "{57906C2E-D023-4F3F-902C-C7B0101C77BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8FF3884C-F4FD-48AE-945E-0191A2C1361A}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +24,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{821D07DD-EA4E-47F1-97C3-EA563D1C9E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -72,5 +74,11 @@ Global
 		{57906C2E-D023-4F3F-902C-C7B0101C77BA}.Release|x64.Build.0 = Release|Any CPU
 		{57906C2E-D023-4F3F-902C-C7B0101C77BA}.Release|x86.ActiveCfg = Release|Any CPU
 		{57906C2E-D023-4F3F-902C-C7B0101C77BA}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3054B9C2-444B-46D4-8CB9-5B21B66F3D7C}
 	EndGlobalSection
 EndGlobal

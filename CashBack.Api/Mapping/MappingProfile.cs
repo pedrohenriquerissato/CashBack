@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using CashBack.Api.Resources;
+using CashBack.Domain;
 using CashBack.Domain.Models;
 
 namespace CashBack.Api.Mapping
@@ -14,6 +11,7 @@ namespace CashBack.Api.Mapping
         {
             CreateMap<Purchase, PurchaseResource>();
             CreateMap<Retailer, RetailerResource>();
+            CreateMap<CashbackPurchaseDTO, CashbachPurchaseResource>();
             CreateMap<object, LoginResource>();
 
             CreateMap<PurchaseResource, Purchase>();

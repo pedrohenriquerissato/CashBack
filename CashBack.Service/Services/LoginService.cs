@@ -65,7 +65,7 @@ namespace CashBack.Service.Services
             return new
             {
                 authenticated = false,
-                message = "Falha ao realizar login"
+                message = "Falha ao realizar login. Usuário e/ou senha inválidos."
             };
         }
 

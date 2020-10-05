@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.IO;
 using AutoMapper;
 using CashBack.Domain.Repositories;
 using Microsoft.AspNetCore.Builder;
@@ -48,7 +50,7 @@ namespace CashBack.Api
             var tokenConfiguration = new TokenConfiguration();
             new ConfigureFromConfigurationOptions<TokenConfiguration>(Configuration.GetSection("TokenConfiguration")).Configure(tokenConfiguration);
             services.AddSingleton(tokenConfiguration);
-
+            
             services.AddAuthentication(authOptions =>
             {
                 authOptions.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -84,6 +86,30 @@ namespace CashBack.Api
                         Email = "pedro_giberti@hotmail.com",
                     }
                 });
+
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Description = "Informe o token JWT",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey
+                });
+
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+                {
+                    new OpenApiSecurityScheme
+                    {
+                        Reference = new OpenApiReference
+                        {
+                            Id = "Bearer",
+                            Type = ReferenceType.SecurityScheme
+                        }
+                    }, new List<string>()
+                }});
+               
+
+                var filePath = Path.Combine(System.AppContext.BaseDirectory, "CashBack.Api.xml");
+                c.IncludeXmlComments(filePath);
             });
 
             services.AddAutoMapper(typeof(Startup));

@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace CashBack.Domain.Models
@@ -23,6 +24,12 @@ namespace CashBack.Domain.Models
         [JsonIgnore]
         public int RetailerId { get; set; }
         public Retailer Retailer { get; set; }
+
+        [NotMapped]
+        public decimal? CashBackPercent { get; set; }
+
+        [NotMapped]
+        public decimal? CashBack { get; set; }
     }
 
     public class PurchaseStatus
