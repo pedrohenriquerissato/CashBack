@@ -12,6 +12,7 @@ using CashBack.Service.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace CashBack.Api.Controllers
 {
@@ -22,12 +23,14 @@ namespace CashBack.Api.Controllers
         private readonly IPurchaseService _purchaseService;
         private readonly IRetailerService _retailerService;
         private readonly IMapper _mapper;
+        private readonly ILogger<PurchasesController> _logger;
 
-        public PurchasesController(IPurchaseService purchaseService, IMapper mapper, IRetailerService retailerService)
+        public PurchasesController(IPurchaseService purchaseService, IMapper mapper, IRetailerService retailerService, ILogger<PurchasesController> logger)
         {
-            this._mapper = mapper;
-            this._purchaseService = purchaseService;
-            this._retailerService = retailerService;
+            _mapper = mapper;
+            _purchaseService = purchaseService;
+            _retailerService = retailerService;
+            _logger = logger;
         }
 
         /// <summary>
@@ -48,7 +51,9 @@ namespace CashBack.Api.Controllers
             }
             catch (ArgumentException ex)
             {
-                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+                var statusCode = (int) HttpStatusCode.InternalServerError;
+                _logger.LogError($"StatusCode: {statusCode}. Erro: {ex.Message}");
+                return StatusCode(statusCode, ex.Message);
             }
         }
         
@@ -97,7 +102,9 @@ namespace CashBack.Api.Controllers
             }
             catch (ArgumentException ex)
             {
-                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+                var statusCode = (int) HttpStatusCode.InternalServerError;
+                _logger.LogError($"StatusCode: {statusCode}. Erro: {ex.Message}");
+                return StatusCode(statusCode, ex.Message);
             }
         }
 
@@ -120,7 +127,9 @@ namespace CashBack.Api.Controllers
             }
             catch (ArgumentException ex)
             {
-                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+                var statusCode = (int) HttpStatusCode.InternalServerError;
+                _logger.LogError($"StatusCode: {statusCode}. Erro: {ex.Message}");
+                return StatusCode(statusCode, ex.Message);
             }
         }
 

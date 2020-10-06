@@ -6,6 +6,7 @@ using CashBack.Api.Resources;
 using CashBack.Service.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace CashBack.Api.Controllers
 {
@@ -15,11 +16,13 @@ namespace CashBack.Api.Controllers
     {
         private readonly ILoginService _loginService;
         private readonly IMapper _mapper;
+        private readonly ILogger<LoginsController> _logger;
 
-        public LoginsController(ILoginService loginService, IMapper mapper)
+        public LoginsController(ILoginService loginService, IMapper mapper, ILogger<LoginsController> logger)
         {
-            this._mapper = mapper;
-            this._loginService = loginService;
+            _mapper = mapper;
+            _loginService = loginService;
+            _logger = logger;
         }
 
         /// <summary>
@@ -34,6 +37,8 @@ namespace CashBack.Api.Controllers
             try
             {
                 var retailer = await _loginService.Login(login.Email, login.Password);
+
+                _logger.LogInformation($"Login realizado {retailer} em {DateTime.Now}");
 
                 return Ok(retailer);
             }
