@@ -2,13 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using CashBack.Domain;
 using CashBack.Domain.Repositories;
 using CashBack.Service.Interfaces;
-using System.Text.Json;
 using System.Text.RegularExpressions;
 using RestSharp;
 
@@ -19,7 +16,7 @@ namespace CashBack.Service.Services
         private readonly IUnitOfWork _unitOfWork;
         public PurchaseService(IUnitOfWork unitOfWork)
         {
-            this._unitOfWork = unitOfWork;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<Purchase> CreatePurchase(Purchase purchase)
@@ -121,13 +118,13 @@ namespace CashBack.Service.Services
             return new { valorCashBack = response.body.credit};
         }
 
-        internal class Body
+        private class Body
         {
             public int credit { get; set; }
             public string message { get; set; }
         }
 
-        internal class CashBackTotalModel
+        private class CashBackTotalModel
         {
             public int statusCode { get; set; }
             public Body body { get; set; }

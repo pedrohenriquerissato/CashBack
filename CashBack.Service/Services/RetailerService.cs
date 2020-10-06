@@ -1,9 +1,7 @@
 ﻿using CashBack.Domain.Models;
 using CashBack.Domain.Repositories;
 using CashBack.Service.Interfaces;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CashBack.Service.Services
@@ -13,7 +11,7 @@ namespace CashBack.Service.Services
         private readonly IUnitOfWork _unitOfWork;
         public RetailerService(IUnitOfWork unitOfWork)
         {
-            this._unitOfWork = unitOfWork;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<Retailer> CreateRetailer(Retailer retailer)

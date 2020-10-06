@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Net;
 using System.Threading.Tasks;
-using AutoMapper;
 using CashBack.Api.Resources;
 using CashBack.Service.Interfaces;
 using Microsoft.AspNetCore.Authorization;
@@ -15,12 +14,10 @@ namespace CashBack.Api.Controllers
     public class LoginsController : ControllerBase
     {
         private readonly ILoginService _loginService;
-        private readonly IMapper _mapper;
         private readonly ILogger<LoginsController> _logger;
 
-        public LoginsController(ILoginService loginService, IMapper mapper, ILogger<LoginsController> logger)
+        public LoginsController(ILoginService loginService, ILogger<LoginsController> logger)
         {
-            _mapper = mapper;
             _loginService = loginService;
             _logger = logger;
         }

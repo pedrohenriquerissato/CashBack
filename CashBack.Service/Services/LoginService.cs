@@ -24,10 +24,10 @@ namespace CashBack.Service.Services
 
         public LoginService(IUnitOfWork unitOfWork, SigningConfiguration signingConfiguration, TokenConfiguration tokenConfiguration, IConfiguration configuration)
         {
-            this._unitOfWork = unitOfWork;
-            this._signingConfiguration = signingConfiguration;
-            this._tokenConfiguration = tokenConfiguration;
-            this._configuration = configuration;
+            _unitOfWork = unitOfWork;
+            _signingConfiguration = signingConfiguration;
+            _tokenConfiguration = tokenConfiguration;
+            _configuration = configuration;
         }
 
         public async Task<object> Login(string email, string password)

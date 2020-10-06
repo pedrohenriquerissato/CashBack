@@ -17,7 +17,7 @@ namespace CashBack.Data
 
         public UnitOfWork(CashBackContext context)
         {
-            this._context = context;
+            _context = context;
         }
 
         public IPurchaseRepository Purchases => _purchaseRepository = _purchaseRepository ?? new PurchaseRepository(_context);
