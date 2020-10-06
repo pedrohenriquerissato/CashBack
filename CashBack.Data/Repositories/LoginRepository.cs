@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using BCrypt.Net;
 using CashBack.Data.Context;
 using CashBack.Domain.Models;
@@ -17,6 +13,12 @@ namespace CashBack.Data.Repositories
         {
         }
 
+        /// <summary>
+        /// Realiza o login de um(a) revendedor(a)
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public async Task<object> Login(string email, string password)
         {
             if (string.IsNullOrWhiteSpace(email)) return null;
@@ -29,12 +31,7 @@ namespace CashBack.Data.Repositories
 
             if (retailer == null) return null;
 
-            if (!BCrypt.Net.BCrypt.Verify(password, retailer.Password, true, HashType.SHA512))
-            {
-                return null;
-            }
-
-            return retailer;
+            return !BCrypt.Net.BCrypt.Verify(password, retailer.Password, true, HashType.SHA512) ? null : retailer;
         }
     }
 }

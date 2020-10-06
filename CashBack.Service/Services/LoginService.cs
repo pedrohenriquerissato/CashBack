@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Principal;
-using System.Text;
 using System.Threading.Tasks;
 using CashBack.Domain.Models;
 using CashBack.Domain.Repositories;
@@ -41,7 +39,7 @@ namespace CashBack.Service.Services
                     goto NotAuthorized;
                 }
 
-                ClaimsIdentity identity = new ClaimsIdentity(
+                var identity = new ClaimsIdentity(
                     new GenericIdentity(email),
                     new[]
                     {
@@ -51,8 +49,8 @@ namespace CashBack.Service.Services
 
                 );
 
-                DateTime createDateTime = DateTime.Now;
-                DateTime expirationDate = createDateTime + TimeSpan.FromSeconds(_tokenConfiguration.Seconds);
+                var createDateTime = DateTime.Now;
+                var expirationDate = createDateTime + TimeSpan.FromSeconds(_tokenConfiguration.Seconds);
 
                 var handler = new JwtSecurityTokenHandler();
                 var token = CreateToken(identity, createDateTime, expirationDate, handler);
@@ -61,7 +59,7 @@ namespace CashBack.Service.Services
 
             }
 
-            NotAuthorized:
+        NotAuthorized:
             return new
             {
                 authenticated = false,
@@ -86,7 +84,7 @@ namespace CashBack.Service.Services
             return token;
         }
 
-        private object SuccessObject(DateTime createDateTime, DateTime expirationDateTime, string token, string email)
+        private static object SuccessObject(DateTime createDateTime, DateTime expirationDateTime, string token, string email)
         {
             return new
             {

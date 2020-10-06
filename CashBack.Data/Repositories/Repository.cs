@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 using CashBack.Data.Context;
 using CashBack.Domain.Repositories;
@@ -9,43 +8,47 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CashBack.Data.Repositories
 {
-    public class Repository<Entity> : IRepository<Entity> where Entity : class
+    /// <summary>
+    /// Responsável por estabelecer os contratos básicos que toda interface de repositório deve implementar
+    /// </summary>
+    /// <typeparam name="TEntity"></typeparam>
+    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         protected readonly CashBackContext Context;
 
-        public Repository(CashBackContext context)
+        protected Repository(CashBackContext context)
         {
             Context = context;
         }
 
-        public ValueTask<Entity> GetAsync(int id)
+        public ValueTask<TEntity> GetAsync(int id)
         {
-            return Context.Set<Entity>().FindAsync(id);
+            return Context.Set<TEntity>().FindAsync(id);
         }
 
-        public async Task<IEnumerable<Entity>> GetAllAsync()
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
-            return await Context.Set<Entity>().ToListAsync();
+            return await Context.Set<TEntity>().ToListAsync();
         }
 
-        public async Task<Entity> SingleOrDefaultAsync(Expression<Func<Entity, bool>> predicate)
+        public async Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> predicate)
         {
-            return await Context.Set<Entity>().SingleOrDefaultAsync(predicate);
+            return await Context.Set<TEntity>().SingleOrDefaultAsync(predicate);
         }
 
-        public async Task InsertAsync(Entity entity)
+        public async Task InsertAsync(TEntity entity)
         {
-            await Context.Set<Entity>().AddAsync(entity);
+            await Context.Set<TEntity>().AddAsync(entity);
         }
         
-        public void DeleteAsync(Entity entity)
+        public void DeleteAsync(TEntity entity)
         {
-            Context.Set<Entity>().Remove(entity);
+            Context.Set<TEntity>().Remove(entity);
         }
 
-        public async Task UpdateASync(Entity entity)
+        public async Task UpdateASync(TEntity entity)
         {
-            await Context.Set<Entity>().AddAsync(entity);
+            await Context.Set<TEntity>().AddAsync(entity);
         }
     }
 }

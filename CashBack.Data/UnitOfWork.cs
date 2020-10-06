@@ -1,7 +1,4 @@
 ﻿using CashBack.Domain.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using CashBack.Data.Context;
 using CashBack.Data.Repositories;
@@ -20,11 +17,11 @@ namespace CashBack.Data
             _context = context;
         }
 
-        public IPurchaseRepository Purchases => _purchaseRepository = _purchaseRepository ?? new PurchaseRepository(_context);
+        public IPurchaseRepository Purchases => _purchaseRepository ??= new PurchaseRepository(_context);
 
-        public IRetailerRepository Retailers => _retailerRepository = _retailerRepository ?? new RetailerRepository(_context);
+        public IRetailerRepository Retailers => _retailerRepository ??= new RetailerRepository(_context);
 
-        public ILoginRepository Logins => _loginRepository = _loginRepository ?? new LoginRepository(_context);
+        public ILoginRepository Logins => _loginRepository ??= new LoginRepository(_context);
 
         public async Task<int> CommitAsync()
         {
