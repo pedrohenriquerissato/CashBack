@@ -1,5 +1,5 @@
 name: .NET Core Build with Tests
-
+# Testing as a PR
 on:
   push:
     branches: [ master ]
