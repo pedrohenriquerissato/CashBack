@@ -20,6 +20,7 @@
 
 ## Introduction
 
+[![Build Status](https://travis-ci.org/pedrohenriquerissato/CashBack.svg?branch=master)](https://travis-ci.org/pedrohenriquerissato/CashBack)
 [![Coverage](https://coveralls.io/repos/github/pedrohenriquerissato/CashBack/badge.svg?branch=master)](https://coveralls.io/github/pedrohenriquerissato/CashBack?branch=master)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
@@ -42,6 +43,8 @@ Extra implemented stuff:
 - Swagger API Documentation
 - Retailer & Purchase CRUD (not all endpoints are externally available)
 - Domain Driven Design - DDD
+- Implemented Travis CI
+- Implemented Coverall
 
 ## TODO
 
@@ -84,4 +87,5 @@ Feel free to send me feedback on [Email](mailto:pedro_giberti@hotmail.com) or [f
 
 ## Acknowledgments
 
-Thanks for the opportunity.
+- GitPoint for borrowing me their README :) - [Check](https://github.com/gitpoint/git-point#readme)
+- Thanks for the opportunity.
