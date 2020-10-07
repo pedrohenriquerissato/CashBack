@@ -66,7 +66,7 @@ namespace CashBack.Data.Repositories
         /// <summary>
         /// Remove fisicamente um(a) revendedor(a)
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="retailer">Objeto do revendedor</param>
         /// <returns></returns>
         public async Task<bool> DeleteRetailer(Retailer retailer)
         {
@@ -76,7 +76,7 @@ namespace CashBack.Data.Repositories
                 await Context.SaveChangesAsync();
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
