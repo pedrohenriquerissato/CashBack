@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using CashBack.Data.Context;
 using CashBack.Domain.Models;
@@ -9,11 +10,11 @@ namespace CashBack.Data.Repositories
 {
     public class RetailerRepository : Repository<Retailer>, IRetailerRepository
     {
-        public RetailerRepository(CashBackContext context) 
+        public RetailerRepository(CashBackContext context)
             : base(context)
         { }
 
-        //TODO Implment pagination
+        //TODO Implement pagination
         /// <summary>
         /// Retorna todos revendedores com suas compras
         /// </summary>
@@ -32,6 +33,53 @@ namespace CashBack.Data.Repositories
         {
             return await Context.Retailers.Include(p => p.Purchases)
                 .SingleOrDefaultAsync(r => r.DocumentId == documentId);
+        }
+
+        /// <summary>
+        /// Cria um(a) novo(a) revendedor(a)
+        /// </summary>
+        /// <param name="retailer"></param>
+        /// <returns></returns>
+        public async Task<Retailer> CreateRetailer(Retailer retailer)
+        {
+            var encryptedPassword = BCrypt.Net.BCrypt.EnhancedHashPassword(retailer.Password, BCrypt.Net.HashType.SHA512);
+
+            retailer.Password = encryptedPassword;
+
+            await Context.Retailers.AddAsync(retailer);
+            await Context.SaveChangesAsync();
+            return retailer;
+        }
+
+        /// <summary>
+        /// Atualiza um(a) revendedor(a)
+        /// </summary>
+        /// <param name="retailer"></param>
+        /// <returns></returns>
+        public async Task<Retailer> UpdateRetailer(Retailer retailer)
+        {
+            Context.Retailers.Update(retailer);
+            await Context.SaveChangesAsync();
+            return retailer;
+        }
+
+        /// <summary>
+        /// Remove fisicamente um(a) revendedor(a)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<bool> DeleteRetailer(Retailer retailer)
+        {
+            try
+            {
+                Context.Retailers.Remove(retailer);
+                await Context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
     }
 }

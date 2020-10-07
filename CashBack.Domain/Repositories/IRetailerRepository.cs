@@ -10,5 +10,6 @@ namespace CashBack.Domain.Repositories
     {
         Task<IEnumerable<Retailer>> GetAllWithPurchase();
         Task<Retailer> GetWithPurchaseByDocumentIdAsync(string id);
+        Task<Retailer> CreateRetailer(Retailer retailer);
     }
 }
