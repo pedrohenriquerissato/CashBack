@@ -9,12 +9,13 @@ on:
 jobs:
   build:
     # use ubuntu for more build minutes
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     # use release mode for all steps
     env:
       config: 'Release'
 
     steps:
+    - run: docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
     - uses: actions/checkout@v2
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
