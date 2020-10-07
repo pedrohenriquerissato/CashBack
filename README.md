@@ -20,7 +20,6 @@
 
 ## Introduction
 
-[![Build Status](https://img.shields.io/travis/gitpoint/git-point.svg?style=flat-square)](https://travis-ci.org/gitpoint/git-point)
 [![Coverage](https://coveralls.io/repos/github/pedrohenriquerissato/CashBack/badge.svg?branch=master)](https://coveralls.io/github/pedrohenriquerissato/CashBack?branch=master)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
