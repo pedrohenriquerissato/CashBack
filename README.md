@@ -1,7 +1,7 @@
 <h1 align="center"> CashBack API </h1> <br>
 <p align="center">
-  <a href="https://gitpoint.co/">
-    <img alt="A white screen web page with consumable api endpoints" title="CashBack API" src="https://imgur.com/x39dXcc" width="450">
+  <a href="https://i.ibb.co/QQXv6Xs/swagger.png">
+    <img alt="A white screen web page with consumable api endpoints" title="CashBack API" src="https://i.ibb.co/QQXv6Xs/swagger.png" width="450">
   </a>
 </p>
 
@@ -57,12 +57,12 @@ Extra implemented stuff:
 
 <h3 align="center"> CashBack Purchases </h3> <br>
 <p align="center">
-  <img src = "https://imgur.com/4YWcXWo" width=700>
+  <img src = "https://i.ibb.co/C9YkpnS/img1.png" width=700>
 </p>
 
 <h3 align="center"> External API CashBack Total </h3> <br>
 <p align="center">
-  <img src = "https://imgur.com/L6EHUwC" width=700>
+  <img src = "https://i.ibb.co/9pTKrKM/img2.png" width=700>
 </p>
 
 ## Feedback
