@@ -44,7 +44,7 @@ Extra implemented stuff:
 - Retailer & Purchase CRUD (not all endpoints are externally available)
 - Domain Driven Design - DDD
 - Implemented Travis CI
-- Implemented Coverall
+- <s>Implemented Coverall</s> Hold on! Not yet
 
 ## TODO
 
