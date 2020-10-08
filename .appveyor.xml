@@ -1,15 +1,27 @@
+version: '1.0.{build}'
 image: Visual Studio 2019
-
+branches:
+  only:
+  - master
+init:
+  # Good practise, because Windows line endings are different from Unix/Linux ones
+  - cmd: git config --global core.autocrlf true
+install:
+  # Install repo specific stuff here
 before_build:
-- nuget restore
-- choco install opencover.portable
-- choco install codecov
-- docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
-
-build:
-project: CashBack.sln
-verbosity: minimal
-
+  # Display .NET Core version
+  - cmd: dotnet --version
+  # Display minimal restore text
+  - cmd: dotnet restore --verbosity m
+  - ps: docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
+build_script:
+  - cmd: dotnet publish
+after_build:
+  # For once the build has completed
+clone_depth: 1
 test_script:
-- OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:".\CashBack.Data.Test\bin\Debug\CashBack.Data.Test.dll -noshadow" -filter:"+[UnitTestTargetProject*]* -[MyUnitTests*]*" -output:".\MyProject_coverage.xml"
-- codecov -f "MyProject_coverage.xml
+	- OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:".\CashBack.Data.Test\bin\Debug\CashBack.Data.Test.dll -noshadow" -filter:"+[UnitTestTargetProject*]* -[MyUnitTests*]*" -output:".\MyProject_coverage.xml"
+	- codecov -f "MyProject_coverage.xml
+on_finish :
+  # any cleanup in here
+deploy: off
