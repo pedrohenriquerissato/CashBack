@@ -9,5 +9,3 @@ install:
 script:
   - dotnet build
   - dotnet test CashBack.Data.Test/CashBack.Data.Test.csproj
-after_success:
-  - coveralls
