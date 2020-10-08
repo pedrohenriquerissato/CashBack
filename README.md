@@ -44,7 +44,10 @@ Extra implemented stuff:
 - Retailer & Purchase CRUD (not all endpoints are externally available)
 - Domain Driven Design - DDD
 - Implemented Travis CI
-- <s>Implemented Coverall</s> Hold on! Not yet
+
+Future Implementations:
+
+- <s>Implemented Coverall</s> Hold on! Not yet. Abandoned for now due to [problems](https://github.com/lemurheavy/coveralls-public/issues/208). Even coveralls.io not being installed with .NET Core 3.1
 
 ## TODO
 
