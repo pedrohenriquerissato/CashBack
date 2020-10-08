@@ -1,15 +1,15 @@
-image: Visual Studio 2019
+image: .NET Framework
 
 before_build:
-	- dotnet restore
-	- choco install opencover.portable
-	- choco install codecov
-	- docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
+- dotnet restore
+- choco install opencover.portable
+- choco install codecov
+- docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
 
 build:
-	project: CashBack.sln
-	verbosity: minimal
+project: CashBack.sln
+verbosity: minimal
 
 test_script:
-	- OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:".\CashBack.Data.Test\bin\Debug\CashBack.Data.Test.dll -noshadow" -filter:"+[UnitTestTargetProject*]* -[MyUnitTests*]*" -output:".\MyProject_coverage.xml"
-	- codecov -f "MyProject_coverage.xml
+- OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:".\CashBack.Data.Test\bin\Debug\CashBack.Data.Test.dll -noshadow" -filter:"+[UnitTestTargetProject*]* -[MyUnitTests*]*" -output:".\MyProject_coverage.xml"
+- codecov -f "MyProject_coverage.xml
