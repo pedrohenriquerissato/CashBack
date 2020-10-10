@@ -1,5 +1,7 @@
-version: '1.0.{build}'
-image: Visual Studio 2019
+version: ~> 1.0
+language: csharp
+mono: none
+dotnet: 3.1.402
 branches:
   only:
   - master
@@ -10,9 +12,6 @@ init:
 install:
   # Install repo specific stuff here
 before_build:
-  # Display .NET Core version
-  - cmd: dotnet --version
-  # Display minimal restore text
   - cmd: dotnet restore --verbosity m
   - ps: docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
 build_script:
