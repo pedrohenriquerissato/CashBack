@@ -70,7 +70,7 @@ Future Implementations:
 
 ## Feedback
 
-Feel free to send me feedback on [Email](mailto:pedro_giberti@hotmail.com) or [file an issue](https://github.com/gitpoint/git-point/issues/new). Feature requests are always welcome.
+Feel free to send me feedback on [Email](mailto:pedro_giberti@hotmail.com) or [file an issue](https://github.com/pedrohenriquerissato/CashBack/issues/new). Feature requests are always welcome.
 
 ## Build Process
 
@@ -78,17 +78,17 @@ Feel free to send me feedback on [Email](mailto:pedro_giberti@hotmail.com) or [f
 - Install [Docker](https://www.docker.com/get-started)
 - Install [dotnet ef tools](https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/dotnet#installing-the-tools)
 
-- Install & Run SQL Server:
+- Install & Run SQL Server:  
   `docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest`
 
-- Run on project:
+- Run on project:  
   `dotnet ef database update InitialCreate`
 
-- Then finally run:
+- Then finally run:  
   `dotnet build`
   `dotnet run`
 
 ## Acknowledgments
 
-- GitPoint for borrowing me their README :) - [Check](https://github.com/gitpoint/git-point#readme)
+- GitPoint for borrowing me their [README](https://github.com/gitpoint/git-point#readme)
 - Thanks for the opportunity.
