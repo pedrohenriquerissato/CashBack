@@ -6,15 +6,12 @@ before_script:
     - sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=yourStrong(!)Password' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
 install:
     - dotnet restore
-    - dotnet tool install coveralls.net --version 2.0.0-beta0002 --tool-path tools   
+    - dotnet tool install coveralls.net --version 2.0.0-beta0002 --tool-path tools
+    - dotnet toll install --global minicover
 script:
     - dotnet build
-    - cd minicover
-    - dotnet restore
-    - dotnet minicover instrument --workdir ../ 
-    - dotnet minicover reset
-    - cd ..
+    - minicover instrument --workdir ../ 
+    - minicover reset
     - dotnet test --no-build
-    - cd minicover
-    - dotnet minicover report --workdir ../
-    - dotnet minicover coverallsreport --root-path ../ --workdir ../ --service-name "travis-ci" --service-job-id "$TRAVIS_JOB_ID"
+    - minicover report --workdir ../
+    - minicover coverallsreport --root-path ../ --workdir ../ --service-name "travis-ci" --service-job-id "$TRAVIS_JOB_ID"
