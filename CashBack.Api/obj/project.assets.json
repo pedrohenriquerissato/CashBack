@@ -38,15 +38,6 @@
           "lib/netstandard2.1/BCrypt.Net-Next.dll": {}
         }
       },
-      "DataAnnotationsExtensions/5.0.1.27": {
-        "type": "package",
-        "compile": {
-          "lib/NETFramework40/DataAnnotationsExtensions.dll": {}
-        },
-        "runtime": {
-          "lib/NETFramework40/DataAnnotationsExtensions.dll": {}
-        }
-      },
       "FluentValidation/9.2.0": {
         "type": "package",
         "compile": {
@@ -1775,18 +1766,6 @@
         "lib/netstandard2.0/BCrypt.Net-Next.xml",
         "lib/netstandard2.1/BCrypt.Net-Next.dll",
         "lib/netstandard2.1/BCrypt.Net-Next.xml"
-      ]
-    },
-    "DataAnnotationsExtensions/5.0.1.27": {
-      "sha512": "lw4n4XzY62raAOrrlPdkh4h3PXenReARIazAPzs8AvlkKDAK9pe7kcUL3dh3T095/Q9+LezoXCfjEgDPslmGyg==",
-      "type": "package",
-      "path": "dataannotationsextensions/5.0.1.27",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "dataannotationsextensions.5.0.1.27.nupkg.sha512",
-        "dataannotationsextensions.nuspec",
-        "lib/NETFramework40/DataAnnotationsExtensions.dll"
       ]
     },
     "FluentValidation/9.2.0": {
@@ -6201,7 +6180,6 @@
       "CashBack.Data >= 1.0.0",
       "CashBack.Domain >= 1.0.0",
       "CashBack.Service >= 1.0.0",
-      "DataAnnotationsExtensions >= 5.0.1.27",
       "FluentValidation.AspNetCore >= 9.2.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.8",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.8",
@@ -6229,8 +6207,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://bitzar.pkgs.visualstudio.com/_packaging/Modules/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -6267,10 +6244,6 @@
           "BCrypt.Net-Next": {
             "target": "Package",
             "version": "[4.0.0, )"
-          },
-          "DataAnnotationsExtensions": {
-            "target": "Package",
-            "version": "[5.0.1.27, )"
           },
           "FluentValidation.AspNetCore": {
             "target": "Package",
@@ -6309,20 +6282,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DataAnnotationsExtensions 5.0.1.27' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "DataAnnotationsExtensions",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

@@ -6,7 +6,6 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using CashBack.Domain.Attributes;
 using CashBack.Domain.Models;
-using DataAnnotationsExtensions;
 
 namespace CashBack.Api.Resources
 {
@@ -20,7 +19,7 @@ namespace CashBack.Api.Resources
         public int ProductId { get; set; }
 
         [Required(ErrorMessage = "Favor informar o valor da compra")]
-        [Min(0.01)]
+        // [Min(0.01)]
         [JsonPropertyName("compraValor")]
         public decimal Amount { get; set; }
 
