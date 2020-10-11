@@ -11,8 +11,8 @@ install:
     - export PATH="/home/travis/.dotnet/tools:$PATH"
 script:
     - dotnet build
-    - minicover instrument --workdir ../ 
+    - minicover instrument --workdir ./ 
     - minicover reset
     - dotnet test --no-build
-    - minicover report --workdir ../
-    - minicover coverallsreport --root-path ../ --workdir ../ --service-name "travis-ci" --service-job-id "$TRAVIS_JOB_ID"
+    - minicover report --workdir ./
+    - minicover coverallsreport --root-path ./ --workdir ./ --service-name "travis-ci" --service-job-id "$TRAVIS_JOB_ID"
