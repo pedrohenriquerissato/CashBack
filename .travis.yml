@@ -11,7 +11,7 @@ script:
     - dotnet build
     - cd minicover
     - dotnet restore
-    - dotnet minicover instrument --workdir ../ --sources ./**/*.cs --exclude-sources ./**/Tests/*.cs --exclude-sources ./**/Models/*.cs --exclude-sources ./**/DTO/*.cs --exclude-sources ./**/Attributes/*.cs --exclude-sources ./**/Startup.cs --exclude-sources ./**/Program.cs --exclude-sources ./**/Migrations/*.cs
+    - dotnet minicover instrument --workdir ../ 
     - dotnet minicover reset
     - cd ..
     - dotnet test --no-build
