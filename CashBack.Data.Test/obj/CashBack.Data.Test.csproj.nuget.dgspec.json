@@ -1,38 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data.Test/CashBack.Data.Test.csproj": {}
+    "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data.Test\\CashBack.Data.Test.csproj": {}
   },
   "projects": {
-    "/mnt/c/Users/pedrorissato/entrevista/CashBack.Api/CashBack.Api.csproj": {
+    "C:\\Users\\pedrorissato\\entrevista\\CashBack.Api\\CashBack.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Api/CashBack.Api.csproj",
+        "projectUniqueName": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Api\\CashBack.Api.csproj",
         "projectName": "CashBack.Api",
-        "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Api/CashBack.Api.csproj",
-        "packagesPath": "/home/pedrorissato/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Api/obj/",
+        "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Api\\CashBack.Api.csproj",
+        "packagesPath": "C:\\Users\\pedrorissato\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/pedrorissato/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\pedrorissato\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data/CashBack.Data.csproj": {
-                "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data/CashBack.Data.csproj"
+              "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data\\CashBack.Data.csproj": {
+                "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data\\CashBack.Data.csproj"
               },
-              "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj": {
-                "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj"
+              "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj": {
+                "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj"
               },
-              "/mnt/c/Users/pedrorissato/entrevista/CashBack.Service/CashBack.Service.csproj": {
-                "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Service/CashBack.Service.csproj"
+              "C:\\Users\\pedrorissato\\entrevista\\CashBack.Service\\CashBack.Service.csproj": {
+                "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Service\\CashBack.Service.csproj"
               }
             }
           }
@@ -57,6 +59,10 @@
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.0, )"
+            },
+            "DataAnnotationsExtensions": {
+              "target": "Package",
+              "version": "[5.0.1.27, )"
             },
             "FluentValidation.AspNetCore": {
               "target": "Package",
@@ -95,39 +101,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data.Test/CashBack.Data.Test.csproj": {
+    "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data.Test\\CashBack.Data.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data.Test/CashBack.Data.Test.csproj",
+        "projectUniqueName": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data.Test\\CashBack.Data.Test.csproj",
         "projectName": "CashBack.Data.Test",
-        "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data.Test/CashBack.Data.Test.csproj",
-        "packagesPath": "/home/pedrorissato/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data.Test/obj/",
+        "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data.Test\\CashBack.Data.Test.csproj",
+        "packagesPath": "C:\\Users\\pedrorissato\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/pedrorissato/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\pedrorissato\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/mnt/c/Users/pedrorissato/entrevista/CashBack.Api/CashBack.Api.csproj": {
-                "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Api/CashBack.Api.csproj"
+              "C:\\Users\\pedrorissato\\entrevista\\CashBack.Api\\CashBack.Api.csproj": {
+                "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Api\\CashBack.Api.csproj"
               },
-              "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data/CashBack.Data.csproj": {
-                "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data/CashBack.Data.csproj"
+              "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data\\CashBack.Data.csproj": {
+                "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data\\CashBack.Data.csproj"
               },
-              "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj": {
-                "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj"
+              "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj": {
+                "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj"
               }
             }
           }
@@ -185,33 +193,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data/CashBack.Data.csproj": {
+    "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data\\CashBack.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data/CashBack.Data.csproj",
+        "projectUniqueName": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data\\CashBack.Data.csproj",
         "projectName": "CashBack.Data",
-        "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data/CashBack.Data.csproj",
-        "packagesPath": "/home/pedrorissato/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data/obj/",
+        "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data\\CashBack.Data.csproj",
+        "packagesPath": "C:\\Users\\pedrorissato\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/pedrorissato/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\pedrorissato\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj": {
-                "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj"
+              "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj": {
+                "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj"
               }
             }
           }
@@ -259,26 +269,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj": {
+    "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj",
         "projectName": "CashBack.Domain",
-        "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj",
-        "packagesPath": "/home/pedrorissato/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/obj/",
+        "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj",
+        "packagesPath": "C:\\Users\\pedrorissato\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/pedrorissato/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\pedrorissato\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -315,33 +327,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/mnt/c/Users/pedrorissato/entrevista/CashBack.Service/CashBack.Service.csproj": {
+    "C:\\Users\\pedrorissato\\entrevista\\CashBack.Service\\CashBack.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Service/CashBack.Service.csproj",
+        "projectUniqueName": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Service\\CashBack.Service.csproj",
         "projectName": "CashBack.Service",
-        "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Service/CashBack.Service.csproj",
-        "packagesPath": "/home/pedrorissato/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Service/obj/",
+        "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Service\\CashBack.Service.csproj",
+        "packagesPath": "C:\\Users\\pedrorissato\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/pedrorissato/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\pedrorissato\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj": {
-                "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj"
+              "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj": {
+                "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj"
               }
             }
           }
@@ -387,7 +401,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
