@@ -44,15 +44,6 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
-      "DataAnnotationsExtensions/5.0.1.27": {
-        "type": "package",
-        "compile": {
-          "lib/NETFramework40/DataAnnotationsExtensions.dll": {}
-        },
-        "runtime": {
-          "lib/NETFramework40/DataAnnotationsExtensions.dll": {}
-        }
-      },
       "DotLiquid/2.0.333": {
         "type": "package",
         "compile": {
@@ -2550,7 +2541,6 @@
           "CashBack.Data": "1.0.0",
           "CashBack.Domain": "1.0.0",
           "CashBack.Service": "1.0.0",
-          "DataAnnotationsExtensions": "5.0.1.27",
           "FluentValidation.AspNetCore": "9.2.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.8",
           "Swashbuckle.AspNetCore": "5.6.3"
@@ -2701,18 +2691,6 @@
         "build/netstandard1.0/coverlet.core.pdb",
         "coverlet.collector.1.2.0.nupkg.sha512",
         "coverlet.collector.nuspec"
-      ]
-    },
-    "DataAnnotationsExtensions/5.0.1.27": {
-      "sha512": "lw4n4XzY62raAOrrlPdkh4h3PXenReARIazAPzs8AvlkKDAK9pe7kcUL3dh3T095/Q9+LezoXCfjEgDPslmGyg==",
-      "type": "package",
-      "path": "dataannotationsextensions/5.0.1.27",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "dataannotationsextensions.5.0.1.27.nupkg.sha512",
-        "dataannotationsextensions.nuspec",
-        "lib/NETFramework40/DataAnnotationsExtensions.dll"
       ]
     },
     "DotLiquid/2.0.333": {
@@ -8406,40 +8384,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pedrorissato\\.nuget\\packages\\": {}
+    "/home/pedrorissato/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data.Test\\CashBack.Data.Test.csproj",
+      "projectUniqueName": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data.Test/CashBack.Data.Test.csproj",
       "projectName": "CashBack.Data.Test",
-      "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data.Test\\CashBack.Data.Test.csproj",
-      "packagesPath": "C:\\Users\\pedrorissato\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data.Test\\obj\\",
+      "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data.Test/CashBack.Data.Test.csproj",
+      "packagesPath": "/home/pedrorissato/.nuget/packages/",
+      "outputPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data.Test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pedrorissato\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/pedrorissato/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://bitzar.pkgs.visualstudio.com/_packaging/Modules/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\pedrorissato\\entrevista\\CashBack.Api\\CashBack.Api.csproj": {
-              "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Api\\CashBack.Api.csproj"
+            "/mnt/c/Users/pedrorissato/entrevista/CashBack.Api/CashBack.Api.csproj": {
+              "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Api/CashBack.Api.csproj"
             },
-            "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data\\CashBack.Data.csproj": {
-              "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data\\CashBack.Data.csproj"
+            "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data/CashBack.Data.csproj": {
+              "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data/CashBack.Data.csproj"
             },
-            "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj": {
-              "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj"
+            "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj": {
+              "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj"
             }
           }
         }
@@ -8497,20 +8472,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DataAnnotationsExtensions 5.0.1.27' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "DataAnnotationsExtensions",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

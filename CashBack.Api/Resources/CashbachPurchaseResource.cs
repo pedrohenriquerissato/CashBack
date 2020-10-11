@@ -6,7 +6,6 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using CashBack.Domain.Attributes;
 using CashBack.Domain.Models;
-using DataAnnotationsExtensions;
 using Newtonsoft.Json;
 
 namespace CashBack.Api.Resources
