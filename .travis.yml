@@ -11,7 +11,7 @@ install:
     - export PATH="/home/travis/.dotnet/tools:$PATH"
 script:
     - dotnet build
-    - minicover instrument --workdir ../ 
+    - minicover instrument
     - minicover reset
     - dotnet test --no-build
     - minicover report --workdir ./
