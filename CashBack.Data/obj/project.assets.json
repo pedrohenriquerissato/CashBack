@@ -5725,31 +5725,33 @@
     ]
   },
   "packageFolders": {
-    "/home/pedrorissato/.nuget/packages/": {}
+    "C:\\Users\\pedrorissato\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data/CashBack.Data.csproj",
+      "projectUniqueName": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data\\CashBack.Data.csproj",
       "projectName": "CashBack.Data",
-      "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data/CashBack.Data.csproj",
-      "packagesPath": "/home/pedrorissato/.nuget/packages/",
-      "outputPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Data/obj/",
+      "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data\\CashBack.Data.csproj",
+      "packagesPath": "C:\\Users\\pedrorissato\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/pedrorissato/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\pedrorissato\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj": {
-              "projectPath": "/mnt/c/Users/pedrorissato/entrevista/CashBack.Domain/CashBack.Domain.csproj"
+            "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj": {
+              "projectPath": "C:\\Users\\pedrorissato\\entrevista\\CashBack.Domain\\CashBack.Domain.csproj"
             }
           }
         }
@@ -5797,7 +5799,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
