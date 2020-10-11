@@ -14,5 +14,5 @@ script:
     - minicover instrument
     - minicover reset
     - dotnet test --no-build
-    - minicover report --workdir ./
+    - minicover instrument --assemblies ./CashBack.*/**/*.dll --sources ./CashBack.Api/**/CashBack.Api.dll --sources ./CashBack.Data/**/CashBack.Data.dll --sources ./CashBack.Service/**/CashBack.Service.dll --sources ./CashBack.Domain/**/CashBack.Domain.dll --exclude-tests ./**/Test/*.cs
     - minicover coverallsreport --root-path ./ --workdir ./ --service-name "travis-ci" --service-job-id "$TRAVIS_JOB_ID"
