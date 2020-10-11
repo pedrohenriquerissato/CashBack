@@ -8,11 +8,11 @@ install:
     - dotnet restore
     - dotnet tool install coveralls.net --version 2.0.0-beta0002 --tool-path tools
     - dotnet tool install minicover -g
-    - source ~/.bashrc
+    - export PATH="/home/travis/.dotnet/tools:$PATH"
 script:
     - dotnet build
-    - sudo minicover instrument --workdir ../ 
-    - sudo minicover reset
+    - minicover instrument --workdir ../ 
+    - minicover reset
     - dotnet test --no-build
     - minicover report --workdir ../
     - minicover coverallsreport --root-path ../ --workdir ../ --service-name "travis-ci" --service-job-id "$TRAVIS_JOB_ID"
