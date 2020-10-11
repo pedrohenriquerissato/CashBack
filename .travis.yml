@@ -7,7 +7,7 @@ before_script:
 install:
     - dotnet restore
     - dotnet tool install coveralls.net --version 2.0.0-beta0002 --tool-path tools
-    - dotnet toll install --global minicover
+    - dotnet tool install --global minicover
 script:
     - dotnet build
     - minicover instrument --workdir ../ 
