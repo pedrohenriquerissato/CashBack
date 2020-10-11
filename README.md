@@ -43,11 +43,8 @@ Extra implemented stuff:
 - Swagger API Documentation
 - Retailer & Purchase CRUD (not all endpoints are externally available)
 - Domain Driven Design - DDD
-- Implemented Travis CI
-
-Future Implementations:
-
-- <s>Implemented Coverall</s> Hold on! Not yet. Abandoned for now due to [problems](https://github.com/lemurheavy/coveralls-public/issues/208). Even coveralls.io not being installed with .NET Core 3.1
+- Travis CI/CD
+- Tests coverage with Coveralls.io
 
 ## TODO
 
@@ -85,7 +82,7 @@ Feel free to send me feedback on [Email](mailto:pedro_giberti@hotmail.com) or [f
   `dotnet ef database update InitialCreate`
 
 - Then finally run:  
-  `dotnet build`
+  `dotnet build`  
   `dotnet run`
 
 ## Acknowledgments
