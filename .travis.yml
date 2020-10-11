@@ -11,8 +11,8 @@ install:
     - export PATH="/home/travis/.dotnet/tools:$PATH"
 script:
     - dotnet build
-    - minicover instrument
+    - minicover instrument --assemblies ./CashBack.*/**/*.dll --sources ./CashBack.Api/**/CashBack.Api.dll --sources ./CashBack.Data/**/CashBack.Data.dll --sources ./CashBack.Service/**/CashBack.Service.dll --sources ./CashBack.Domain/**/CashBack.Domain.dll --exclude-tests ./**/Test/*.cs
     - minicover reset
     - dotnet test --no-build
-    - minicover instrument --assemblies ./CashBack.*/**/*.dll --sources ./CashBack.Api/**/CashBack.Api.dll --sources ./CashBack.Data/**/CashBack.Data.dll --sources ./CashBack.Service/**/CashBack.Service.dll --sources ./CashBack.Domain/**/CashBack.Domain.dll --exclude-tests ./**/Test/*.cs
+    - minicover report --workdir ./
     - minicover coverallsreport --root-path ./ --workdir ./ --service-name "travis-ci" --service-job-id "$TRAVIS_JOB_ID"
