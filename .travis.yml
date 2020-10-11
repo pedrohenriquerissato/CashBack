@@ -7,9 +7,9 @@ before_script:
 install:
     - dotnet restore
     - dotnet tool install coveralls.net --version 2.0.0-beta0002 --tool-path tools
+script:
     - dotnet tool install minicover -g
     - source ~/.bashrc
-script:
     - dotnet build
     - minicover instrument --workdir ../ 
     - minicover reset
